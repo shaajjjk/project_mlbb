@@ -1,0 +1,183 @@
+/* Глобальные стили */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('background.jpg') no-repeat center center fixed; /* Фон в стиле игры */
+    background-size: cover;
+    color: #ffffff;
+}
+
+header {
+    background: linear-gradient(to right, #0d1f33, #14284a, #0d1f33); /* Добавлен плавный градиент */
+    padding: 20px;
+    border-bottom: 4px solid #50e3c2;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Тень под хедером */
+}
+
+header h1 {
+    font-size: 3em; /* Увеличен заголовок */
+    color: #50e3c2;
+    text-shadow: 2px 2px 10px rgba(80, 227, 194, 0.8); /* Светящийся текст */
+    animation: glow 2s infinite alternate; /* Анимация света */
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 2px 2px 10px rgba(80, 227, 194, 0.8);
+    }
+    to {
+        text-shadow: 2px 2px 20px rgba(80, 227, 194, 1);
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffffff;
+    font-size: 1.3em;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #50e3c2;
+    border-color: #50e3c2; /* Добавление рамки при наведении */
+    background-color: rgba(80, 227, 194, 0.1); /* Подсветка фона */
+}
+
+/* Стиль для страницы с результатами */
+.result-section {
+    padding: 60px;
+    background: rgba(13, 31, 51, 0.9); /* Полупрозрачный темный блок */
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Более насыщенная тень */
+    text-align: center;
+    animation: fadeIn 1.5s ease; /* Плавное появление */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.result-section h2 {
+    color: #50e3c2;
+    font-size: 2em; /* Увеличенный текст описания */
+    text-shadow: 1px 1px 8px rgba(80, 227, 194, 0.8);
+    margin-bottom: 20px;
+    animation: fadeInText 2s ease;
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.result-section p {
+    font-size: 1.3em;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Светящиеся границы */
+.result-section, .tip {
+    border: 2px solid rgba(80, 227, 194, 0.7);
+    box-shadow: 0 0 15px rgba(80, 227, 194, 0.5), 0 0 20px rgba(80, 227, 194, 0.7);
+}
+
+/* Стили для секции с советами */
+.tips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.tip {
+    background-color: rgba(0, 0, 0, 0.7); /* Темный полупрозрачный фон для цитат */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border-left: 5px solid #50e3c2;
+    width: calc(50% - 40px); /* Каждый блок занимает 50% строки с учетом отступов */
+    box-sizing: border-box;
+    transition: transform 0.3s ease; /* Анимация при наведении */
+}
+
+.tip:hover {
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+}
+
+/* Выделенный блок (совет от 300bucks) */
+.single-tip {
+    width: calc(100% - 40px); /* Блок занимает всю ширину */
+}
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+    .tip, .single-tip {
+        width: 100%; /* На мобильных устройствах каждый блок занимает 100% */
+    }
+}
+
+/* Таблица с результатами турнира */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #50e3c2;
+}
+
+table th {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #50e3c2;
+}
+
+table td {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(13, 31, 51, 0.9);
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.7); /* Тень сверху для подвала */
+}

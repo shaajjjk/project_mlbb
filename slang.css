@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4a90e2, #50e3c2); /* Градиентный фон другой цветовой схемы */
+    color: #ffffff; /* Цвет текста */
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8); /* Более темный полупрозрачный фон для заголовка */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px solid #50e3c2; /* Добавление границы снизу */
+}
+
+h1 {
+    font-size: 2.5em; /* Увеличенный размер заголовка */
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none; /* Убираем стандартные маркеры списка */
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline; /* Ставим элементы меню в одну строку */
+    margin-right: 20px;
+}
+
+nav a {
+    color: #50e3c2; /* Цвет текста ссылок */
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    font-size: 1.2em; /* Увеличенный размер текста для ссылок */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Подчеркивание ссылки при наведении */
+    color: #ffffff; /* Изменение цвета при наведении */
+}
+
+main {
+    padding: 20px; /* Отступы вокруг основного контента */
+}
+
+h2 {
+    font-size: 2em; /* Увеличенный размер заголовков секций */
+    margin-top: 20px;
+    color: #50e3c2; /* Цвет заголовков секций */
+}
+
+p {
+    font-size: 1.1em; /* Увеличенный размер текста абзацев */
+    line-height: 1.5; /* Увеличенный межстрочный интервал */
+}
+
+ul {
+    list-style-type: none; /* Убираем маркеры у списков */
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px; /* Отступ между элементами списка */
+}
+
+img {
+    max-width: 100%; /* Адаптивные изображения */
+    height: auto;
+    margin-top: 20px; /* Отступ сверху для изображений */
+    border-radius: 10px; /* Закругление углов изображений */
+}
+
+.video-section iframe {
+    display: block;
+    margin: 20px auto; /* Центрирование видео */
+    border: 2px solid #50e3c2; /* Граница вокруг видео */
+    border-radius: 10px; /* Закругление углов видео */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный фон для подвала */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+}
+
+footer p {
+    margin: 5px 0; /* Отступы для текста в подвале */
+}
